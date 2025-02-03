@@ -6,7 +6,8 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste Cassia
 //Não consegui colocar espaço nos nomes dos Estados e das cidades, tem que digitar o nome sem espaco.
-
+//Não soube como arrumar este erro na linha 11, corrijo, salvo e não salva, para corrigir: Delete e Tab.
+    
     int main(){
     
     printf("Super Trunfo - Paises - Cadastro de Cartas \n\n");
