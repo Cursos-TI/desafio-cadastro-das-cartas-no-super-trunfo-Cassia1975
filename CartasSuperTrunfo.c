@@ -15,31 +15,51 @@ int main(){
 
 
     char pais[50] = "";
-    char estado = "A,B,C,D,E,F,G,H";
-    int cidade = "01,02,03,04";
-
-    int populacao = "0.0";
-    int area = "";
-    int PIB = "";
-    int pontos = "";
+    char codigo_do_estado = "A,B,C,D,E,F,G,H";
+    int codigo_da_cidade = "01,02,03,04";
+    char nome_do_estado[60];
+    char nome_da_cidade[160];
+    float populacao;
+    float area;
+    float PIB;
+    float pontos;
 
     printf("\n\nPais:\n", pais);
     scanf("%s", &pais);
 
-    printf("\nEstado:\n", estado);
-    scanf("%s", &estado);
+    printf("\nCodigo do Estado:\n", codigo_do_estado);
+    scanf("%s", &codigo_do_estado);
 
-    printf("Cidade:\n", cidade);
-    scanf("%d", &cidade);
+    printf("Codigo da Cidade:\n", codigo_da_cidade);
+    scanf("%d", &codigo_da_cidade);
+
+    printf("\nNome do Estado:\n", nome_do_estado);
+    scanf("%s", &nome_do_estado);
+
+    printf("Nome da Cidade:\n", nome_da_cidade);
+    scanf("%s", &nome_da_cidade);
 
     printf("Populacao:\n", populacao);
-    scanf("%d", &populacao);
+    scanf("%f", &populacao);
 
     printf("Area:\n", area);
-    scanf("%d", &area);
+    scanf("%f", &area);
 
     printf("PIB:\n", PIB);
-    scanf("%d", &PIB);
+    scanf("%f", &PIB);
+
+    printf("Numero de Pontos Turisticos:\n", pontos);
+    scanf("%f", &pontos);
+
+    printf("\nPropriedades da carta:\n");
+    printf("Codigo da carta: %c%d\n", codigo_do_estado, codigo_da_cidade);
+    printf("Estado: %s\n", nome_do_estado);
+    printf("Cidade: %s\n", nome_da_cidade);
+    printf("Populacao: %.3f\n", populacao);
+    printf("Area: %.3f\n", area);
+    printf("PIB: %.3f\n", PIB);
+    printf("Numero de pontos turisticos:%.0f\n", pontos);
    
+
     return 0;
 }
