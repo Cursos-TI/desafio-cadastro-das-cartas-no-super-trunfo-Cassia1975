@@ -6,7 +6,8 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste Cassia
 //Não consegui colocar espaço nos nomes dos Estados e das cidades, tem que digitar o nome sem espaco.
-int main(){
+
+    int main(){
     
     printf("Super Trunfo - Paises - Cadastro de Cartas \n\n");
     printf("Sr(a) usuario, insira os dados de cada carta, de oito estados identificados pelas letras de A a H. Cada estado tera quatro cidades, numeradas de 1 a 4");
