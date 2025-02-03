@@ -6,17 +6,40 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+int main(){
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Super Trunfo - Paises - Cadastro de Cartas \n\n");
+    printf("Sr(a) usuario, insira os dados de cada carta, em oito estados, identificados pelas letras de A a H. Cada estado tera quatro cidades, numeradas de 1 a 4");
+    printf("\nObs: digite numeros inteiros e sem pontuacao");
+    printf("\n\n'Cartas'");
 
+
+    char pais[50] = "";
+    char estado = "A,B,C,D,E,F,G,H";
+    int cidade = "01,02,03,04";
+
+    int populacao = "0.0";
+    int area = "";
+    int PIB = "";
+    int pontos = "";
+
+    printf("\n\nPais:\n", pais);
+    scanf("%s", &pais);
+
+    printf("\nEstado:\n", estado);
+    scanf("%s", &estado);
+
+    printf("Cidade:\n", cidade);
+    scanf("%d", &cidade);
+
+    printf("Populacao:\n", populacao);
+    scanf("%d", &populacao);
+
+    printf("Area:\n", area);
+    scanf("%d", &area);
+
+    printf("PIB:\n", PIB);
+    scanf("%d", &PIB);
+   
     return 0;
 }
