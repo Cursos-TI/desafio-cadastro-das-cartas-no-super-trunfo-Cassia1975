@@ -48,7 +48,7 @@
     printf("PIB:\n", PIB);
     scanf("%f", &PIB);
 
-    printf("Numero de Pontos Turisticos:\n", pontos);
+    printf("Numero de Pontos Turisticos:", pontos);
     scanf("%f", &pontos);
 
     printf("\nPropriedades da carta:\n");
