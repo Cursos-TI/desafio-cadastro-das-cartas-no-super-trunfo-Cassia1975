@@ -16,22 +16,28 @@
     char estad[20] = "A,B,C,D,E,F,G,H"; //Estados identificados pelas letras A a H.
     char codig_da_carta[100] = "A01;A02;B01;B02"; //Codigos das cartas (A01,A02,B01,B2).
     char nome[50] = "01,02,03,04"; //Cidades numeradas de 1 a 4.
-    float populacao;
+    int populacao;
     float area;
     float PIB;
     int pontos;
 
+    //O comando 'for' permite que variável seja executada 34 vezez (8 estados X 4 cidades)
+    for (int carta = 1; carta <= 34; carta++) {
+        printf("\nCarta %d\n", carta);
+        
+    //Entrada e saída de dados
     printf("Digite o Estado:", estad);
     scanf("%s", &estad);
 
     printf("Digite o Codigo da Carta:", codig_da_carta);
     scanf("%s", &codig_da_carta);
 
-    printf("Digite Nome da Cidade:", nome);
-    scanf("%s", &nome);
+    printf("Digite Nome da Cidade:", nome); 
+    scanf(" %[^\n]", &nome); // Lê o nome da cidade incluindo espaços e acentuação
+
 
     printf("Digite a Populacao:", populacao);
-    scanf("%f", &populacao);
+    scanf("%d", &populacao);
 
     printf("Digite a Area em km2:", area);
     scanf("%f", &area);
@@ -42,45 +48,7 @@
     printf("Digite a quantidade de Pontos Turisticos:", pontos);
     scanf("%d", &pontos);
 
-    printf("\nPropriedades da Carta:\n");
-    printf("Codigo da Carta: %s\n", codig_da_carta);
-    printf("Estado: %s\n", estad);
-    printf("Cidade: %s\n", nome);
-    printf("Populacao: %.3f\n", populacao);
-    printf("Area em km2: %.1f\n", area);
-    printf("PIB: %.3f\n", PIB);
-    printf("Pontos Turisticos: %d\n", pontos);
-
-    printf("\nDigite o Estado:", estad);
-    scanf("%s", &estad);
-
-    printf("Digite o Codigo da Carta:", codig_da_carta);
-    scanf("%s", &codig_da_carta);
-
-    printf("Digite o Nome da Cidade:", nome);
-    scanf("%s", &nome);
-
-    printf("Digite a Populacao:", populacao);
-    scanf("%f", &populacao);
-
-    printf("Digite a Area em km2:", area);
-    scanf("%f", &area);
-
-    printf("Digite o PIB:", PIB);
-    scanf("%f", &PIB);
-
-    printf("Diguite a quantidade de Pontos Turisticos:", pontos);
-    scanf("%d", &pontos);
-
-    printf("\nPropriedades da Carta:\n");
-    printf("Codigo da Carta: %s\n", codig_da_carta);
-    printf("Estado: %s\n", estad);
-    printf("Cidade: %s\n", nome);
-    printf("Populacao: %.3f\n", populacao);
-    printf("Area em km2: %.1f\n", area);
-    printf("PIB: %.3f\n", PIB);
-    printf("Pontos Turisticos: %d\n", pontos);
-    
+    }
 
        
     // Cadastro das Cartas:
